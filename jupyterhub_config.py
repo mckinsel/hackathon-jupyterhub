@@ -23,6 +23,7 @@ c.DockerSpawner.extra_host_config = {
     'network_mode': 'jupyterhub',
 }
 c.JupyterHub.db_url = os.path.join("/user_db", "jupyterhub.sqlite")
+c.JupyterHub.cookie_secret_file = os.path.join("/user_db", "cookie_secret_file")
 
 
 from tornado import gen
