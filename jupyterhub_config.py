@@ -1,7 +1,7 @@
 """Originally from
 https://github.com/minrk/jupyterhub-swarm/blob/master/hub-inside/jupyterhub_config.py
 """
-
+import os
 from dockerspawner import DockerSpawner
 
 c.JupyterHub.spawner_class = DockerSpawner
