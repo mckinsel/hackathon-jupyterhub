@@ -22,6 +22,7 @@ c.DockerSpawner.use_internal_ip = True
 c.DockerSpawner.extra_host_config = {
     'network_mode': 'jupyterhub',
 }
+c.JupyterHub.db_url = os.path.join("/user_db", "jupyterhub.sqlite")
 
 
 from tornado import gen
